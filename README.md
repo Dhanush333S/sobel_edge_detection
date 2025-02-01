@@ -31,3 +31,18 @@ The steps in the algo is as follows :
 PGM is easier to read and write but can't be viewed as Graphical object.
 
 So , second version with JPG read and write is implemented with help of lib. 
+
+----- 
+Commit Name  : **Added OpenACC** 
+
+run the file :
+
+> pgcc -acc -fast -Minfo=accel withOpenACC.c stb_image.c stb_image_write.c -lm
+
+Store the image in input.jpg
+
+Run :
+
+>./a.out
+
+Output.png contains the edge detected PNG File 
